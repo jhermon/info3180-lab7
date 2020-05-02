@@ -47,17 +47,18 @@ const Home = Vue.component('home', {
 const uploadForm = Vue.component('upload-form',{
     template:`
         <div>
+            <h1>Upload Form</h1>
             <form @submit.prevent="uploadPhoto()" id="uploadForm">
                 <div class="form-group">
                     <label>Description</label>
                     <textarea class="form-control" type="text" row="4" name="description" placeholder="Enter description"></textarea>
                 </div>
                 <div class="form-group">
-                    <label>Photo</label>
-                    <input  class="form-group form-control" type="file" name="photo">
-                </div>
+                    <label>Photo Upload</label><br>
+                    <input type="file" name="photo">
+                </div><br>
                 <button type="submit" class="btn btn-primary">Upload photo</button>
-            </form>
+            </form><br>
         </div>
     `,
     methods:{
